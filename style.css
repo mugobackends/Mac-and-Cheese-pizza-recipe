@@ -1,0 +1,151 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Recipe Container */
+.recipe {
+    display: flex;
+    flex-direction: column;
+}
+
+.recipe__image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+}
+
+.recipe__content {
+    padding: 30px;
+}
+
+/* Typography */
+h1 {
+    font-size: 2.2rem;
+    color: #222;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #444;
+    margin: 25px 0 15px;
+    font-weight: 600;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 8px;
+}
+
+p {
+    margin: 0 0 15px;
+    color: #555;
+}
+
+
+.prep-time {
+    background-color: #fff9f0;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    border-left: 4px solid #ffb347;
+}
+
+.prep-time__heading {
+    color: #e67e22;
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+
+.prep-time__details {
+    padding-left: 20px;
+}
+
+.prep-time__details li {
+    margin-bottom: 8px;
+}
+
+/* Lists */
+ul, ol {
+    padding-left: 25px;
+    margin: 15px 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Horizontal Rule */
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #eee;
+    margin: 30px 0;
+}
+
+/* Nutrition Table */
+.nutrition-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.nutrition-table th, 
+.nutrition-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.nutrition-table th {
+    font-weight: 600;
+    color: #444;
+}
+
+.nutrition-table tr:last-child th,
+.nutrition-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .recipe__content {
+        padding: 20px;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    .recipe__image img {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    
+    .recipe__image img {
+        height: 250px;
+    }
+    
+    .prep-time {
+        padding: 15px;
+    }
+}
